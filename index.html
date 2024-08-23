@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spaceship</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div id="parallax" class="container">
+      <div class="planet-container">
+        <div class="planet"></div>
+      </div>
+
+      <div class="asteroids__back parallax" data-speed="0.2">
+        <div class="back"><img src="./src/images/backdrop.png" alt="asteroids" /></div>
+      </div>
+
+      <div class="asteroids__middle parallax" data-speed="0.6">
+        <div class="middle middle-1">
+          <img src="./src/images/mid_center.png" alt="asteroids" />
+        </div>
+        <div class="middle middle-2">
+          <img src="./src/images/mid_center2.png" alt="asteroids" />
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="coming-soon">
+          <p class="coming-soon-title">Coming Soon</p>
+          <p class="coming-soon-text">
+            May the Force <br />
+            be with you...
+          </p>
+        </div>
+
+        <div class="planet-info info-frame">
+          <p class="palnet-name">Unknow Planet</p>
+          <p class="planet-data">
+            Mass: No Info <br />
+            Popularity: No info <br />
+            Chivilizations: No info <br />
+            Athmospheric: No Info
+          </p>
+        </div>
+
+        <div class="caution info-frame">
+          <strong>Caution!</strong> The physics <br />
+          of the local asteroid <br />
+          field is unknown.
+        </div>
+      </div>
+
+      <div class="starship">
+        <div class="flame-container">
+          <div>
+            <img
+              class="flame flame-right2"
+              src="./src/images/Vector-right16.png"
+              alt="engine flame"
+            />
+          </div>
+          <img
+            class="flame flame-right1"
+            src="./src/images/Group-right4.png"
+            alt="engine flame"
+          />
+          <img
+            class="flame flame-center1"
+            src="./src/images/Group-center1.png"
+            alt="engine flame"
+          />
+          <img
+            class="flame flame-left1"
+            src="./src/images/Group-left3.png"
+            alt="engine flame"
+          />
+          <img
+            class="flame flame-center2"
+            src="./src/images/Vector-center13.png"
+            alt="engine flame"
+          />
+          <img
+            class="flame flame-left2"
+            src="./src/images/Vector-left15.png"
+            alt="engine flame"
+          />
+        </div>
+        <img class="starship-img" src="./src/images/Starship.png" alt="starship" />
+
+        <div class="flame-container"></div>
+      </div>
+
+      <div class="asteroids__front">
+        <div class="front front-1">
+          <img src="./src/images/leftfront.png" alt="asteroids" />
+        </div>
+        <div class="front front-2">
+          <img src="./src/images/leftfront2.png" alt="asteroids" />
+        </div>
+        <div class="front front-3">
+          <img src="./src/images/downfront.png" alt="asteroids" />
+        </div>
+        <div class="front front-4">
+          <img src="./src/images/rightfront.png" alt="asteroids" />
+        </div>
+      </div>
+    </div>
+    
+    <!-- ANIMATION LIB -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"
+      integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script defer src="./index.js"></script>
+  </body>
+</html>
